@@ -1,1 +1,140 @@
-/* placeholder for CSS -- finish basic structure of HTML then mess with styles later */
+/* Base styling for page elements */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+li, a, button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    text-decoration: none;
+    color: #212121;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Top navigation bar */
+
+header {
+    padding: 1px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top__nav__left, .top__nav__right {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    padding: 10px 10px;
+}
+
+.top__nav__left li, .top__nav__right li {
+    padding: 10px 10px;
+}
+
+#profile__pic img {
+    border-radius: 50%;
+    display: block;
+}
+
+
+/* Logo and Search Bar */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+.google__logo {
+    margin-top: 100px;
+    flex: 1;
+    min-width: 500px;
+    min-height: 100px;
+    text-align: center;
+    padding: 20px;
+}
+
+.search__form {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1;
+    margin-top: 20px;
+    padding: 5px 10px;
+    min-width: 600px;
+    border: 1px solid #dfe1e5;
+    border-radius: 50px;
+}
+
+.search__form:hover {
+    box-shadow: 0 0 1px 1px #ccc;
+}
+
+#mic__img button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#search__bar input {
+    width: 450px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.search__options {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    padding: 5px 10px;
+    flex: 1;
+    min-width: 300px;
+}
+
+.search__button {
+    width: auto;
+    height: auto;
+}
+
+.search__button button {
+    font-size: 14px;
+    padding: 10px;
+    margin: 5px;
+    outline:none;
+    border: none;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    width: auto;
+    height: 3em;
+    cursor: pointer;
+}
+
+.search__button button:hover {
+    box-shadow: 0 0 1px 1px #ccc;
+}
+
+
+/* Button navigation bar/footer */
+
+
+
+
